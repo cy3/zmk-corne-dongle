@@ -15,8 +15,6 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&wheel_scaler 2 1>; };
-
 &msc {
     acceleration-exponent = <0>;      // 0
     time-to-max-speed-ms = <0>;       // 300
@@ -50,7 +48,7 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <20>;
+        tap-ms = <100>;
     };
 
     keymap {
@@ -83,7 +81,7 @@
             display-name = "num";
             bindings = <
 
-&kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5                       &mmv MOVE_UP                 &kp N6     &kp N7     &kp N8    &kp N9       &kp N0    &kp BSPC
+&kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5                       &mmv MOVE_UP                 &kp N6     &kp N7     &kp N8    &kp N9       &kp N0    &kp DEL
 &trans     &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT    &none     &kp SQT
 &trans     &none   &none      &none      &none      &mkp MB5     &kp C_MUTE      &mmv MOVE_DOWN               &kp HOME   &kp END    &kp PG_UP &kp PG_DN    &trans    &trans
                               &trans     &trans     &kp SPACE                                                 &kp SPACE  &trans     &trans
@@ -115,17 +113,6 @@
             timeout-ms = <100>;                 /* 동시에 눌렀다고 간주할 최대 지연 */
             key-positions = < 43 46 >;         /* ← ❶ 각 키의 row/col 인덱스 입력 */
             bindings = <&mo 3>;                /* ❷ 원하는 목적 레이어 번호 */
-        };
-    };
-
-    /* 더 키우고, 남은 값을 추적하도록 사용자 scaler 하나 추가 */
-    input_processors {
-        wheel_scaler: wheel_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type  = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL>;
-            track-remainders;               /* 작은 단위 누락 방지 */
         };
     };
 
