@@ -48,14 +48,14 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <100>;
+        tap-ms = <20>;
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "char";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                        &mmv MOVE_UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
@@ -66,7 +66,7 @@
         };
 
         lower_layer {
-            display-name = "SYMBOL";
+            display-name = "sym";
             bindings = <
 &kp TILDE &kp EXCL  &kp AT    &kp HASH    &kp DLLR     &kp PRCNT                        &mmv MOVE_UP                     &kp CARET    &kp AMPS    &kp ASTRK  &kp LPAR   &kp RPAR   &kp BSPC
 &trans    &kp ESC   &kp ESC   &kp ESC     &kp ESC      &kp LG(LS(S))    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS    &kp PLUS    &kp EQUAL  &kp LBKT   &kp RBKT   &kp GRAVE
@@ -78,7 +78,7 @@
         };
 
         raise_layer {
-            display-name = "NUMBER";
+            display-name = "num";
             bindings = <
 
 &kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5                       &mmv MOVE_UP                 &kp N6     &kp N7     &kp N8    &kp N9       &kp N0    &kp BSPC
@@ -91,7 +91,7 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "fn";
             bindings = <
 &none           &kp F1        &kp F2        &kp F3         &kp F4          &kp F5                         &mmv MOVE_UP                  &kp F6          &kp F7            &kp F8           &kp F9       &kp F10    &none
 &bt BT_CLR_ALL  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3   &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT    &rgb_ug RGB_BRI &rgb_ug RGB_BRD   &none            &none        &none      &kp RCTRL
