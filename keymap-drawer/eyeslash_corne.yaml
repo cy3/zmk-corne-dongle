@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyeslash_corne}
 layers:
-  QWERTY:
+  char:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
-  - SYMBOL
+  - sym
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
-  - NUMBER
+  - num
   - LGUI
-  SYMBOL:
+  sym:
   - '~'
   - '!'
   - '@'
@@ -98,7 +98,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  NUMBER:
+  num:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -147,7 +147,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  fn:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
   - F2
@@ -198,4 +198,4 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [43, 46]
-  k: Fn
+  k: fn
