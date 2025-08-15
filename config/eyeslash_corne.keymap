@@ -81,10 +81,10 @@
             display-name = "num";
             bindings = <
 
-&kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5                       &mmv MOVE_UP                 &kp N6     &kp N7     &kp N8    &kp N9       &kp N0    &kp DEL
-&trans     &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT    &none     &kp SQT
-&trans     &none   &none      &none      &none      &mkp MB5     &kp C_MUTE      &mmv MOVE_DOWN               &kp HOME   &kp END    &kp PG_UP &kp PG_DN    &trans    &trans
-                              &trans     &trans     &kp SPACE                                                 &kp SPACE  &trans     &trans
+&kp GRAVE  &kp N1         &kp N2         &kp N3           &kp N4             &kp N5                       &mmv MOVE_UP                 &kp N6     &kp N7     &kp N8    &kp N9       &kp N0    &kp DEL
+&trans     &msc SCRL_UP   &mkp LCLK      &mmv MOVE_UP     &mkp RCLK          &mkp MCLK    &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT    &none     &kp SQT
+&trans     &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &mkp MB4     &kp C_MUTE      &mmv MOVE_DOWN               &kp HOME   &kp END    &kp PG_UP &kp PG_DN    &trans    &trans
+                                  &trans           &trans             &kp SPACE                                                 &kp SPACE  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
