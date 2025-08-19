@@ -81,9 +81,9 @@
             display-name = "num";
             bindings = <
 
-&kp GRAVE  &kp N1         &kp N2         &kp N3           &kp N4             &kp N5                       &mmv MOVE_UP                 &kp N6     &kp N7     &kp N8    &kp N9       &kp N0    &kp DEL
-&trans     &msc SCRL_UP   &mkp LCLK      &mmv MOVE_UP     &mkp RCLK          &mkp MCLK    &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT    &none     &kp SQT
-&trans     &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &mkp MB4     &kp C_MUTE      &mmv MOVE_DOWN               &kp HOME   &kp END    &kp PG_UP &kp PG_DN    &trans    &trans
+&kp GRAVE  &kp N1         &kp N2         &kp N3           &kp N4             &kp N5                            &mmv MOVE_UP                 &kp N6     &kp N7     &kp N8    &kp N9     &kp N0     &kp DEL
+&mkp MB4   &msc SCRL_UP   &mkp LCLK      &mmv MOVE_UP     &mkp RCLK          &msc SCRL_RIGHT   &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &mkp LCLK  &kp SQT
+&mkp MB5   &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &msc SCRL_LEFT    &kp C_MUTE      &mmv MOVE_DOWN               &kp HOME   &kp PG_DN  &kp PG_UP &kp END    &mkp MCLK  &trans
                                   &trans           &trans             &kp SPACE                                                 &kp SPACE  &trans     &trans
             >;
 
