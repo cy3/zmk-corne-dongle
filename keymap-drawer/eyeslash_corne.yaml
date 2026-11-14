@@ -67,7 +67,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-esc$$
-  - Alt+$$mdi:printer-outline$$
+  - Gui+Alt+$$mdi:printer-outline$$
   - Gui+Sft+S
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
