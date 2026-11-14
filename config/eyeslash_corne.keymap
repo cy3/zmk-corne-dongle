@@ -62,7 +62,7 @@
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &mkp RCLK       &mmv MOVE_DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                          &kp LALT  &mo 1  &kp SPACE                                                &kp SPACE    &mo 2  &kp LGUI
             >;
-             sensor-bindings = <&scroll_encoder>;
+             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
@@ -73,7 +73,7 @@
 &trans    &none     &none     &none       &none        &none            &mkp MCLK       &mmv MOVE_DOWN                   &kp UNDER    &kp BSLH    &kp PIPE   &kp LBRC   &kp RBRC   &trans
                               &trans      &trans       &trans                                                            &kp SPACE    &trans      &trans
             >;             
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
             /*LG(LS(S))  := Win(= LGUI) + Shift(= LSHIFT) + S */
         };
 
@@ -99,7 +99,7 @@
                                             &trans         &trans          &trans                                                       &trans          &trans            &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         swap_layer {
